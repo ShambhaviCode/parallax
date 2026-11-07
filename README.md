@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # PARALLAX
 ### Incident intelligence for systems that cannot afford guesswork.
 
