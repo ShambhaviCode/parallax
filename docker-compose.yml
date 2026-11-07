@@ -1,0 +1,33 @@
+services:
+  api:
+    build:
+      context: ./backend
+    environment:
+      PARALLAX_DATABASE_URL: sqlite:////data/parallax.db
+      PARALLAX_CORS_ORIGINS: http://localhost:5173
+    volumes:
+      - parallax_data:/data
+    ports:
+      - "8100:8100"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8100/api/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 8
+  web:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./frontend:/workspace
+      - frontend_node_modules:/workspace/node_modules
+    environment:
+      VITE_API_URL: http://localhost:8100
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  parallax_data:
+  frontend_node_modules:
