@@ -1,38 +1,17 @@
 
 # PARALLAX
-### Incident intelligence for systems that cannot afford guesswork.
-
-PARALLAX is a demo-ready incident command product for distributed software teams. It turns a noisy service incident into a structured investigation: service impact, evidence-backed competing hypotheses, a controlled experiment, a recovery proposal, and an explicit human decision.
-
-<img width="1917" height="897" alt="image" src="https://github.com/user-attachments/assets/41f429b1-61d2-4e72-9a11-9390de1cca11" />
-
-## Product experience
-
-- **Public product site** with a guided explanation and a live demo entry point.
-- **Incident command center** with system health, incident impact, service topology and investigation progress.
-- **Evidence ledger** that shows supporting and contradicting signals for competing hypotheses.
-- **Counterfactual experiment** with a reproducible before/after comparison.
-- **Human decision gate** for approving or rejecting a recovery proposal.
-- **Incident report** export in Markdown and JSON.
-- **Audit trail** for investigation and operator decisions.
-- **Switch workflow template** for a watcher and investigator agent collaborating in a shared room.
 
 
+<img width="1917" height="898" alt="Screenshot 2026-11-07 201231" src="https://github.com/user-attachments/assets/7b2d91c9-0435-4ae3-ba9c-88babca990a5" />
 
 
-## Engineering
-- Backend: Fastapi, SQLite, Pydantic.
-- Frontend: React, TypeScript, Vite, Lucide.
-- Tests: Pytest API and workflow tests.
-- Persistence: SQLite file at `backend/parallax.db` (created at runtime).
-- No external LLM key is required for the deterministic demo.
+<img width="1697" height="871" alt="Screenshot 2026-11-07 201557" src="https://github.com/user-attachments/assets/44ae55dc-81c2-4770-ad17-a3bd43cff254" />
 
-## Known boundaries
-- Telemetry is simulated, not collected from production services.
-- The experiment is a deterministic model of the incident, not a live database test.
-- No production infrastructure is modified.
-- Switch setup requires a separate Switch server, a supported provider/runtime, registered agents and active sessions.
-- Run a production security review before exposing this demo to a public network.
-=======
-# parallax
-AI powered incident intelligence platform using Switch-connected agents to detect incidents, investigate root causes, analyze evidence, and support human in the loop decisions.
+
+<img width="1686" height="892" alt="Screenshot 2026-11-07 201657" src="https://github.com/user-attachments/assets/fd187ad1-6654-4818-b406-293cabf1dbf3" />
+
+<img width="1911" height="916" alt="Screenshot 2026-11-07 202032" src="https://github.com/user-attachments/assets/7198e697-4c4c-465f-b1fd-5ed9d8a34c6c" />
+
+<img width="1890" height="891" alt="Screenshot 2026-11-07 202142" src="https://github.com/user-attachments/assets/08ddaa9e-1716-4784-bc62-e43b4bd9f786" />
+
+
