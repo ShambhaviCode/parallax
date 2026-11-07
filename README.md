@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PARALLAX
 ### Incident intelligence for systems that cannot afford guesswork.
 
@@ -96,3 +97,7 @@ See [`switch/README.md`](switch/README.md) and [`switch/parallax.template.yaml`]
 - No production infrastructure is modified.
 - Switch setup requires a separate Switch server, a supported provider/runtime, registered agents and active sessions.
 - Run a production security review before exposing this demo to a public network.
+=======
+# parallax
+AI powered incident intelligence platform using Switch-connected agents to detect incidents, investigate root causes, analyze evidence, and support human in the loop decisions.
+>>>>>>> dc36312679552979b652bf6c9102e7397e9a33f8
